@@ -41,7 +41,8 @@ setup_target(libvgmstream)
 
 # Set up the proper include directories
 target_include_directories(libvgmstream PRIVATE
-	${VGM_SOURCE_DIR}/ext_includes
 	coding
 	layout
 	meta)
+
+#target_include_directories(libvgmstream PRIVATE AFTER ${VGM_SOURCE_DIR}/ext_includes)
